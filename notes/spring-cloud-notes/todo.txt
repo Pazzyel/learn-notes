@@ -1,0 +1,5 @@
+1. 为商品查询(ItemService的queryItemById，queryItemByIds)添加Redis缓存功能，并解决缓存穿透（布隆过滤器了解一下？），击穿问题
+2. 引入秒杀优惠券服务，整合Redis的分布式锁功能，lua实现命令原子性，和RabbitMQ联动替换原先的Redis stream消息队列
+3. 引入评测服务，为某个型号，种类的商品新增评测服务，方便用户全面了解商品情况，整合Redis的ZSet功能
+4. 探索微服务的部署形式，联动K8s
+5. 探索和AI Agent的联动，新增AI查询商品功能，可以用LangChain？LangChain4j or SpringAI
